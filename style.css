@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #212121;
+    --background-color: #212121;
+    --font: sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: var(--primary-color);
+    color: #ff4500;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+body {
+    background: var(--background-color);
+    font-family: var(--font);
+    justify-content: center;
+}
+
+.timeline {
+    background: var(--primary-color);
+    margin: 20px auto;
+    padding-left: 35%;
+
+}
+
+.outer {
+    border-left: 2.5px solid #333;
+    height: 100%;
+    /* Adjust this value as needed */
+}
+
+.card {
+    position: relative;
+    margin: 10px 20px 20px;
+    padding: 10px;
+    background: #333;
+    color: gray;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.details {
+    margin-left: 18px;
+    margin-top: 10px;
+}
+
+.title {
+    color: orangered;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -39px;
+    border: 3px solid orangered;
+}
+
+@media screen and (max-width: 500px) {
+    .timeline {
+            padding-left: 10px;
+        }
+    
+        .card {
+            margin: 10px 10px 20px;
+            max-width: 100%;
+        }
+    
+        .title::before {
+            left: -28px;
+        }
+    
+        .details {
+            margin-left: 10px;
+        }
+}
