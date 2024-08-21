@@ -11,10 +11,12 @@
 
 .header {
     background: var(--primary-color);
-    color: #ff4500;
+    color: orangered;
     text-align: center;
     padding: 10px;
-    padding-bottom: 0;
+    font-size: 1rem;
+    font-family: var(--font);
+
 }
 
 body {
@@ -58,12 +60,12 @@ li {
 }
 
 .details {
-    margin-left: 18px;
+    margin-left: 30px;
     margin-top: 10px;
 }
 
 .title {
-    color: orangered;
+    color: orangered;;
     position: relative;
 }
 
@@ -78,7 +80,7 @@ li {
     border: 3px solid orangered;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .timeline {
             padding-left: 10px;
         }
@@ -93,6 +95,6 @@ li {
         }
     
         .details {
-            margin-left: 10px;
+            margin-left: 30px;
         }
 }
